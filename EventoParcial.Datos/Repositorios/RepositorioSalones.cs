@@ -9,17 +9,16 @@ using System.Threading.Tasks;
 
 namespace EventoParcial.Datos.Repositorios
 {
-    public class RepositorioEventos : IRepositorioEventos
+    public class RepositorioSalones : IRepositorioSalones
     {
         private readonly BibliotecaDbContext _dbContext;
-        public RepositorioEventos(BibliotecaDbContext dbContext)
+        public RepositorioSalones(BibliotecaDbContext dbContext)
         {
             _dbContext = dbContext;
         }
-        public List<Evento> ObtenerLista()
+        public List<Salon> ObtenerLista()
         {
-            return _dbContext.Eventos
-                .Include(e => e.Salon)
+            return _dbContext.Salones
                 .AsNoTracking()
                 .ToList();
         }

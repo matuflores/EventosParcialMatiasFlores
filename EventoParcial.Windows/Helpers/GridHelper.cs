@@ -1,4 +1,4 @@
-﻿using EventoParcial.Servicios.DTOS.Evento;
+﻿using EventoParcial.Servicios.DTOs.Evento;
 
 namespace EventoParcial.Windows.Helpers
 {
@@ -46,7 +46,7 @@ namespace EventoParcial.Windows.Helpers
             {
                 case EventoListDto eventoDto:
                     r.Cells[0].Value = eventoDto.EventoId;
-                    r.Cells[1].Value = eventoDto.Fecha.ToShortDateString();
+                    r.Cells[1].Value = eventoDto.Fecha.ToString();
                     r.Cells[2].Value = eventoDto.NombreEvento;
                     r.Cells[3].Value = eventoDto.CantidadPersonas;
                     r.Cells[4].Value = eventoDto.Salon;

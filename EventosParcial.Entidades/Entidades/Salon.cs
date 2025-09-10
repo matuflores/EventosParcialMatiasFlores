@@ -13,5 +13,7 @@ namespace EventoParcial.Entidades.Entidades
         public int Capacidad { get; set; }
         public string Direccion { get; set; } = null!;
         public Localidad Localidad { get; set; } = null!;
+
+        public List<Evento> Eventos { get; set; } = new();
     }
 }

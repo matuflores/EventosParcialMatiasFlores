@@ -1,10 +1,10 @@
-﻿using EventoParcial.Servicios.DTOS.Evento;
+﻿using EventoParcial.Servicios.DTOs.Evento;
 
 namespace EventoParcial.Windows
 {
     public partial class frmDetalleEvento : Form
     {
-        private EventoDetalleDto? evento;
+        //private EventoDetalleDto? evento;
         public frmDetalleEvento()
         {
             InitializeComponent();

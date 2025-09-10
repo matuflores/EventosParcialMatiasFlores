@@ -61,10 +61,11 @@
             // 
             // toolBar
             // 
+            toolBar.ImageScalingSize = new Size(20, 20);
             toolBar.Items.AddRange(new ToolStripItem[] { tsbNuevo, tsbEditar, tsbDetalles, tsbSuspender, tsbVigente, toolStripSeparator1, tsbFiltrar, tsbActualizar, toolStripSeparator2, tsbCerrar });
             toolBar.Location = new Point(0, 0);
             toolBar.Name = "toolBar";
-            toolBar.Size = new Size(984, 62);
+            toolBar.Size = new Size(1125, 67);
             toolBar.TabIndex = 0;
             toolBar.Text = "toolStrip1";
             // 
@@ -74,7 +75,7 @@
             tsbNuevo.ImageScaling = ToolStripItemImageScaling.None;
             tsbNuevo.ImageTransparentColor = Color.Magenta;
             tsbNuevo.Name = "tsbNuevo";
-            tsbNuevo.Size = new Size(46, 59);
+            tsbNuevo.Size = new Size(56, 64);
             tsbNuevo.Text = "Nuevo";
             tsbNuevo.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
@@ -84,7 +85,7 @@
             tsbEditar.ImageScaling = ToolStripItemImageScaling.None;
             tsbEditar.ImageTransparentColor = Color.Magenta;
             tsbEditar.Name = "tsbEditar";
-            tsbEditar.Size = new Size(44, 59);
+            tsbEditar.Size = new Size(52, 64);
             tsbEditar.Text = "Editar";
             tsbEditar.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
@@ -94,7 +95,7 @@
             tsbDetalles.ImageScaling = ToolStripItemImageScaling.None;
             tsbDetalles.ImageTransparentColor = Color.Magenta;
             tsbDetalles.Name = "tsbDetalles";
-            tsbDetalles.Size = new Size(52, 59);
+            tsbDetalles.Size = new Size(67, 64);
             tsbDetalles.Text = "Detalles";
             tsbDetalles.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
@@ -104,7 +105,7 @@
             tsbSuspender.ImageScaling = ToolStripItemImageScaling.None;
             tsbSuspender.ImageTransparentColor = Color.Magenta;
             tsbSuspender.Name = "tsbSuspender";
-            tsbSuspender.Size = new Size(66, 59);
+            tsbSuspender.Size = new Size(82, 64);
             tsbSuspender.Text = "Suspender";
             tsbSuspender.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
@@ -114,14 +115,14 @@
             tsbVigente.ImageScaling = ToolStripItemImageScaling.None;
             tsbVigente.ImageTransparentColor = Color.Magenta;
             tsbVigente.Name = "tsbVigente";
-            tsbVigente.Size = new Size(51, 59);
+            tsbVigente.Size = new Size(64, 64);
             tsbVigente.Text = "Vigente";
             tsbVigente.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(6, 62);
+            toolStripSeparator1.Size = new Size(6, 67);
             // 
             // tsbFiltrar
             // 
@@ -130,7 +131,7 @@
             tsbFiltrar.ImageScaling = ToolStripItemImageScaling.None;
             tsbFiltrar.ImageTransparentColor = Color.Magenta;
             tsbFiltrar.Name = "tsbFiltrar";
-            tsbFiltrar.Size = new Size(53, 59);
+            tsbFiltrar.Size = new Size(61, 64);
             tsbFiltrar.Text = "Filtrar";
             tsbFiltrar.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
@@ -138,14 +139,14 @@
             // 
             porSalónToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cboSalonFiltro });
             porSalónToolStripMenuItem.Name = "porSalónToolStripMenuItem";
-            porSalónToolStripMenuItem.Size = new Size(124, 22);
+            porSalónToolStripMenuItem.Size = new Size(154, 26);
             porSalónToolStripMenuItem.Text = "Por Salón";
             // 
             // cboSalonFiltro
             // 
             cboSalonFiltro.DropDownStyle = ComboBoxStyle.DropDownList;
             cboSalonFiltro.Name = "cboSalonFiltro";
-            cboSalonFiltro.Size = new Size(121, 23);
+            cboSalonFiltro.Size = new Size(121, 28);
             // 
             // tsbActualizar
             // 
@@ -153,14 +154,14 @@
             tsbActualizar.ImageScaling = ToolStripItemImageScaling.None;
             tsbActualizar.ImageTransparentColor = Color.Magenta;
             tsbActualizar.Name = "tsbActualizar";
-            tsbActualizar.Size = new Size(63, 59);
+            tsbActualizar.Size = new Size(79, 64);
             tsbActualizar.Text = "Actualizar";
             tsbActualizar.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator2
             // 
             toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new Size(6, 62);
+            toolStripSeparator2.Size = new Size(6, 67);
             // 
             // tsbCerrar
             // 
@@ -168,34 +169,37 @@
             tsbCerrar.ImageScaling = ToolStripItemImageScaling.None;
             tsbCerrar.ImageTransparentColor = Color.Magenta;
             tsbCerrar.Name = "tsbCerrar";
-            tsbCerrar.Size = new Size(44, 59);
+            tsbCerrar.Size = new Size(44, 64);
             tsbCerrar.Text = "Salir";
             tsbCerrar.TextImageRelation = TextImageRelation.ImageAboveText;
+            tsbCerrar.Click += tsbCerrar_Click;
             // 
             // panelInferior
             // 
             panelInferior.Controls.Add(txtCantidad);
             panelInferior.Controls.Add(label1);
             panelInferior.Dock = DockStyle.Bottom;
-            panelInferior.Location = new Point(0, 523);
+            panelInferior.Location = new Point(0, 698);
+            panelInferior.Margin = new Padding(3, 4, 3, 4);
             panelInferior.Name = "panelInferior";
-            panelInferior.Size = new Size(984, 100);
+            panelInferior.Size = new Size(1125, 133);
             panelInferior.TabIndex = 1;
             // 
             // txtCantidad
             // 
-            txtCantidad.Location = new Point(185, 31);
+            txtCantidad.Location = new Point(211, 41);
+            txtCantidad.Margin = new Padding(3, 4, 3, 4);
             txtCantidad.Name = "txtCantidad";
             txtCantidad.ReadOnly = true;
-            txtCantidad.Size = new Size(100, 23);
+            txtCantidad.Size = new Size(114, 27);
             txtCantidad.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(45, 34);
+            label1.Location = new Point(51, 45);
             label1.Name = "label1";
-            label1.Size = new Size(109, 15);
+            label1.Size = new Size(137, 20);
             label1.TabIndex = 0;
             label1.Text = "Cantidad Registros:";
             // 
@@ -203,9 +207,10 @@
             // 
             panelGrilla.Controls.Add(dgvDatos);
             panelGrilla.Dock = DockStyle.Fill;
-            panelGrilla.Location = new Point(0, 62);
+            panelGrilla.Location = new Point(0, 67);
+            panelGrilla.Margin = new Padding(3, 4, 3, 4);
             panelGrilla.Name = "panelGrilla";
-            panelGrilla.Size = new Size(984, 461);
+            panelGrilla.Size = new Size(1125, 631);
             panelGrilla.TabIndex = 2;
             // 
             // dgvDatos
@@ -218,67 +223,80 @@
             dgvDatos.Columns.AddRange(new DataGridViewColumn[] { colId, colFecha, colNombre, colCantidad, colSalon, colEstado });
             dgvDatos.Dock = DockStyle.Fill;
             dgvDatos.Location = new Point(0, 0);
+            dgvDatos.Margin = new Padding(3, 4, 3, 4);
             dgvDatos.MultiSelect = false;
             dgvDatos.Name = "dgvDatos";
             dgvDatos.ReadOnly = true;
             dgvDatos.RowHeadersVisible = false;
+            dgvDatos.RowHeadersWidth = 51;
             dgvDatos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDatos.Size = new Size(984, 461);
+            dgvDatos.Size = new Size(1125, 631);
             dgvDatos.TabIndex = 0;
             // 
             // colId
             // 
             colId.HeaderText = "Id";
+            colId.MinimumWidth = 6;
             colId.Name = "colId";
             colId.ReadOnly = true;
             colId.Visible = false;
+            colId.Width = 125;
             // 
             // colFecha
             // 
             colFecha.HeaderText = "Fecha";
+            colFecha.MinimumWidth = 6;
             colFecha.Name = "colFecha";
             colFecha.ReadOnly = true;
+            colFecha.Width = 125;
             // 
             // colNombre
             // 
             colNombre.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             colNombre.HeaderText = "Nombre";
+            colNombre.MinimumWidth = 6;
             colNombre.Name = "colNombre";
             colNombre.ReadOnly = true;
             // 
             // colCantidad
             // 
             colCantidad.HeaderText = "Cantidad";
+            colCantidad.MinimumWidth = 6;
             colCantidad.Name = "colCantidad";
             colCantidad.ReadOnly = true;
+            colCantidad.Width = 125;
             // 
             // colSalon
             // 
             colSalon.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             colSalon.HeaderText = "Salón";
+            colSalon.MinimumWidth = 6;
             colSalon.Name = "colSalon";
             colSalon.ReadOnly = true;
             // 
             // colEstado
             // 
             colEstado.HeaderText = "Estado";
+            colEstado.MinimumWidth = 6;
             colEstado.Name = "colEstado";
             colEstado.ReadOnly = true;
             colEstado.Resizable = DataGridViewTriState.True;
             colEstado.SortMode = DataGridViewColumnSortMode.NotSortable;
+            colEstado.Width = 125;
             // 
             // frmEventos
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(984, 623);
+            ClientSize = new Size(1125, 831);
             Controls.Add(panelGrilla);
             Controls.Add(panelInferior);
             Controls.Add(toolBar);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmEventos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Eventos";
-            Shown += frmEventos_Shown;
+            Load += frmEventos_Load;
             toolBar.ResumeLayout(false);
             toolBar.PerformLayout();
             panelInferior.ResumeLayout(false);

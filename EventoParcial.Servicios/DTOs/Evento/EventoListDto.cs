@@ -9,7 +9,7 @@ namespace EventoParcial.Servicios.DTOs.Evento
     public class EventoListDto
     {
         public int EventoId { get; set; }
-        public DateTime? Fecha { get; set; }
+        public DateTime Fecha { get; set; }
         public string NombreEvento { get; set; } = null!;
         public int? CantidadPersonas { get; set; }
         public string Salon { get; set; } = null!;

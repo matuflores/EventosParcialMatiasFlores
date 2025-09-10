@@ -8,9 +8,8 @@ using System.Threading.Tasks;
 
 namespace EventoParcial.Servicios.Interfaces
 {
-    public interface IServicioEventos
+    public interface IServicioSalones
     {
-        int ObtenerCantidad();
-        List<EventoListDto> ObtenerLista();
+        List<Salon> ObtenerLista();
     }
 }

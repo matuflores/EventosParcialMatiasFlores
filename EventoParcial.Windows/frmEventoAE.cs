@@ -1,6 +1,6 @@
-﻿using EventoParcial.Servicios.DTOS.Evento;
-using EventoParcial.Servicios.DTOS.Salon;
-using EventoParcial.Servicios.DTOS.TipoEvento;
+﻿using EventoParcial.Servicios.DTOs.Evento;
+//using EventoParcial.Servicios.DTOs.Salon;
+//using EventoParcial.Servicios.DTOs.TipoEvento;
 using EventoParcial.Servicios.Interfaces;
 using EventoParcial.Windows.Helpers;
 

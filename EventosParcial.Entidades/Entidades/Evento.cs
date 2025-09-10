@@ -11,7 +11,7 @@ namespace EventoParcial.Entidades.Entidades
         public int EventoId { get; set; }
         public string NombreEvento { get; set; } = null!;
         public int? CantidadPersonas { get; set; }
-        public DateTime? Fecha { get; set; }
+        public DateTime Fecha { get; set; }
         public TipoEvento TipoEvento { get; set; } = null!;
         public Salon Salon { get; set; } = null!;
         public bool Suspendido { get; set; }
