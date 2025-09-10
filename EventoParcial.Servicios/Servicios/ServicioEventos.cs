@@ -20,6 +20,11 @@ namespace EventoParcial.Servicios.Servicios
             _repositorioEventos = repositorioEventos;
         }
 
+        public int ObtenerCantidad()
+        {
+            return _repositorioEventos.ObtenerCantidad();
+        }
+
         public List<EventoListDto> ObtenerLista()
         {
             var eventos=_repositorioEventos.ObtenerLista();

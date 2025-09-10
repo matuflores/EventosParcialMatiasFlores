@@ -12,5 +12,6 @@ namespace EventoParcial.Servicios.Interfaces
     {
         int ObtenerCantidad();
         List<EventoListDto> ObtenerLista();
+
     }
 }

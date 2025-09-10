@@ -10,7 +10,7 @@ namespace EventoParcial.Datos.Interfaces
     public interface IRepositorioEventos
     {
         List<Evento> ObtenerLista();//(int? generoId = null);
-        //int ObtenerCantidad(int? generoId = null);
+        int ObtenerCantidad();
 
         //void Agregar(Libro libro);
         //bool ExisteLibro(Libro libro);

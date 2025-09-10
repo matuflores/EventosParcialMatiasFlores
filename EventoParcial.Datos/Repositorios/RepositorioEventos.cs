@@ -16,6 +16,12 @@ namespace EventoParcial.Datos.Repositorios
         {
             _dbContext = dbContext;
         }
+
+        public int ObtenerCantidad()
+        {
+            return _dbContext.Eventos.Count();
+        }
+
         public List<Evento> ObtenerLista()
         {
             return _dbContext.Eventos

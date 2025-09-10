@@ -66,7 +66,7 @@
             toolBar.Location = new Point(0, 0);
             toolBar.Name = "toolBar";
             toolBar.Size = new Size(1125, 67);
-            toolBar.TabIndex = 0;
+            toolBar.TabIndex = 1;
             toolBar.Text = "toolStrip1";
             // 
             // tsbNuevo
@@ -183,7 +183,7 @@
             panelInferior.Margin = new Padding(3, 4, 3, 4);
             panelInferior.Name = "panelInferior";
             panelInferior.Size = new Size(1125, 133);
-            panelInferior.TabIndex = 1;
+            panelInferior.TabIndex = 2;
             // 
             // txtCantidad
             // 

@@ -16,7 +16,6 @@ namespace EventoParcial.Windows
             InitializeComponent();
             _servicioEventos = servicioEventos;
             _servicioSalones = servicioSalones;
-
         }
 
 
@@ -43,7 +42,7 @@ namespace EventoParcial.Windows
 
         private void MostrarCantidad()
         {
-            throw new NotImplementedException();
+            txtCantidad.Text=cantidadDeRegistros.ToString();
         }
 
         private void tsbCerrar_Click(object sender, EventArgs e)
