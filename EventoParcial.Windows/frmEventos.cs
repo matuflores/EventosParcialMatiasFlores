@@ -42,12 +42,45 @@ namespace EventoParcial.Windows
 
         private void MostrarCantidad()
         {
-            txtCantidad.Text=cantidadDeRegistros.ToString();
+            txtCantidad.Text = cantidadDeRegistros.ToString();
         }
 
         private void tsbCerrar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void tsbActualizar_Click(object sender, EventArgs e)
+        {
+            RecargarGrilla();
+        }
+
+        private void tsbDetalles_Click(object sender, EventArgs e)
+        {
+            using (var frm = new frmDetalleEvento() { Text = "Mostrar detalles del Evento" })
+            {
+                DialogResult dr = frm.ShowDialog(this);
+                if (dr == DialogResult.Cancel) return;
+                //string? filtroGenero = frm.GetFiltro();
+                //if (string.IsNullOrEmpty(filtroGenero)) return;
+                //GeneroListDto? generoListDto = _generosServicio.ObtenerGeneroPorNombre(filtroGenero);
+                //if (generoListDto is null)
+                //{
+                //    MessageBox.Show("Genero inexistente");
+                //    return;
+                //}
+                //try
+                //{
+                //    librosDto = _librosServicio.ObtenerLista(generoListDto.GeneroId);
+                //    GridHelper.MostrarDatosEnGrilla<LibroListDto>(librosDto, dgvDatos);
+                //    cantidadDeRegistros = _librosServicio.ObtenerCantidad(generoListDto.GeneroId);
+                //    MostrarCantidad();
+                //}
+                //catch (Exception ex)
+                //{
+                //    MessageBox.Show(ex.Message, "ERROR");
+                //}
+            }
         }
     }
 }

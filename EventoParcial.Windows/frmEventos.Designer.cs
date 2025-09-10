@@ -98,6 +98,7 @@
             tsbDetalles.Size = new Size(67, 64);
             tsbDetalles.Text = "Detalles";
             tsbDetalles.TextImageRelation = TextImageRelation.ImageAboveText;
+            tsbDetalles.Click += tsbDetalles_Click;
             // 
             // tsbSuspender
             // 
@@ -157,6 +158,7 @@
             tsbActualizar.Size = new Size(79, 64);
             tsbActualizar.Text = "Actualizar";
             tsbActualizar.TextImageRelation = TextImageRelation.ImageAboveText;
+            tsbActualizar.Click += tsbActualizar_Click;
             // 
             // toolStripSeparator2
             // 

@@ -10,5 +10,9 @@ namespace EventoParcial.Windows
             InitializeComponent();
         }
 
+        private void frmDetalleEvento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
