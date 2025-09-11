@@ -30,7 +30,7 @@ namespace EventoParcial.Windows
             {
                 eventosDto = _servicioEventos.ObtenerLista();
                 cantidadDeRegistros = _servicioEventos.ObtenerCantidad();
-                GridHelper.MostrarDatosEnGrilla<EventoListDto>(eventosDto, dgvDatos);//NUEVO DE POO METODO GENERICO
+                GridHelper.MostrarDatosEnGrilla<EventoListDto>(eventosDto, dgvDatos);
                 MostrarCantidad();
             }
             catch (Exception)
@@ -61,26 +61,13 @@ namespace EventoParcial.Windows
             {
                 DialogResult dr = frm.ShowDialog(this);
                 if (dr == DialogResult.Cancel) return;
-                //string? filtroGenero = frm.GetFiltro();
-                //if (string.IsNullOrEmpty(filtroGenero)) return;
-                //GeneroListDto? generoListDto = _generosServicio.ObtenerGeneroPorNombre(filtroGenero);
-                //if (generoListDto is null)
-                //{
-                //    MessageBox.Show("Genero inexistente");
-                //    return;
-                //}
-                //try
-                //{
-                //    librosDto = _librosServicio.ObtenerLista(generoListDto.GeneroId);
-                //    GridHelper.MostrarDatosEnGrilla<LibroListDto>(librosDto, dgvDatos);
-                //    cantidadDeRegistros = _librosServicio.ObtenerCantidad(generoListDto.GeneroId);
-                //    MostrarCantidad();
-                //}
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show(ex.Message, "ERROR");
-                //}
             }
+        }
+
+
+        private void cboSalonFiltro_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

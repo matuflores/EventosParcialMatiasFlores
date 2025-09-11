@@ -1,5 +1,6 @@
 ﻿using EventoParcial.Entidades.Entidades;
 using EventoParcial.Servicios.DTOs.Evento;
+using EventoParcial.Servicios.DTOs.Salon;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,9 +24,23 @@ namespace EventoParcial.Servicios.Mapeadores
             };
         }
 
+        public static SalonListDto MapearListDto(Salon salon)
+        {
+            return new SalonListDto
+            {
+                SalonId = salon.SalonId,
+                NombreSalon = salon.NombreSalon,
+            };
+        }
+
         public static List<EventoListDto> MapearLista(List<Evento> eventos)
         {
             return eventos.Select(MapearListDto).ToList();
+        }
+
+        public static List<SalonListDto> MapearLista(List<Salon> salones)
+        {
+            return salones.Select(MapearListDto).ToList();
         }
 
     }

@@ -148,6 +148,7 @@
             cboSalonFiltro.DropDownStyle = ComboBoxStyle.DropDownList;
             cboSalonFiltro.Name = "cboSalonFiltro";
             cboSalonFiltro.Size = new Size(121, 28);
+            cboSalonFiltro.Click += cboSalonFiltro_Click;
             // 
             // tsbActualizar
             // 
